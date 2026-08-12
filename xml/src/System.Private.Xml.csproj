@@ -28,6 +28,11 @@
     <EmbeddedResource Include="System\Xml\XmlCharType.bin" LogicalName="XmlCharType.bin" />
   </ItemGroup>
 
+  <ItemGroup>
+    <!-- Reference the Uri project so Demo.cs can use System.Uri -->
+    <ProjectReference Include="..\..\uri\src\System.Private.Uri.csproj" />
+  </ItemGroup>
+
   <!-- Embedded DTD files -->
   <ItemGroup>
     <EmbeddedResource Include="Utils\DTDs\XHTML10\no_comments\xhtml1-strict.dtd">
