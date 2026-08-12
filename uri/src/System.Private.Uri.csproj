@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>System.Private.Uri</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RootNamespace>dotnet.system</RootNamespace>
+    <NoWarn>436;CS0436;CS0108;CS0114;CS0069;CS0067;SYSLIB0051</NoWarn>
+    <NoWarn>$(NoWarn);CS1573;CS1591;CS1712;CS8632</NoWarn>
+    <Nullable>enable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Common\System\Collections\Generic\ArrayBuilder.cs" Link="Common\System\Collections\Generic\ArrayBuilder.cs" />
+    <Compile Include="Common\System\Collections\Generic\LowLevelDictionary.cs" Link="Common\System\Collections\Generic\LowLevelDictionary.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="FxCopBaseline.cs" />
+    <Compile Include="System\DomainNameHelper.cs" />
+    <Compile Include="System\GenericUriParser.cs" />
+    <Compile Include="System\IPv4AddressHelper.cs" />
+    <Compile Include="System\IPv6AddressHelper.cs" />
+    <Compile Include="System\IriHelper.cs" />
+    <Compile Include="System\UncNameHelper.cs" />
+    <Compile Include="System\Uri.cs" />
+    <Compile Include="System\UriBuilder.cs" />
+    <Compile Include="System\UriEnumTypes.cs" />
+    <Compile Include="System\UriExt.cs" />
+    <Compile Include="System\UriFormatException.cs" />
+    <Compile Include="System\UriHelper.cs" />
+    <Compile Include="System\UriHostNameType.cs" />
+    <Compile Include="System\UriParserTemplates.cs" />
+    <Compile Include="System\UriPartial.cs" />
+    <Compile Include="System\UriScheme.cs" />
+    <Compile Include="System\UriSyntax.cs" />
+    <Compile Include="System\SR.cs" />
+  </ItemGroup>
+
+  <!-- Include platform-specific file based on OS -->
+  <ItemGroup Condition="'$(RuntimeIdentifier)' == 'win' Or '$(RuntimeIdentifier)' == 'win-x64' Or '$(RuntimeIdentifier)' == 'win-x86' Or '$(RuntimeIdentifier)' == 'win-arm64' Or '$(OS)' == 'Windows_NT'">
+    <Compile Include="System\Uri.Windows.cs" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(RuntimeIdentifier)' == 'linux' Or '$(RuntimeIdentifier)' == 'linux-x64' Or '$(RuntimeIdentifier)' == 'linux-arm64' Or '$(RuntimeIdentifier)' == 'osx' Or '$(RuntimeIdentifier)' == 'osx-x64' Or '$(OS)' != 'Windows_NT'">
+    <Compile Include="System\Uri.Unix.cs" />
+  </ItemGroup>
+
+</Project>

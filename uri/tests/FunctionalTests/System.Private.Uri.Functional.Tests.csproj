@@ -1,0 +1,77 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>System.Private.Uri.Functional.Tests</AssemblyName>
+    <RootNamespace>dotnet.system.Private.Uri.Functional.Tests</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <IsPackable>false</IsPackable>
+    <NoWarn>436;CS0436;CS0108;CS0114;CS0069;CS0067;SYSLIB0051;xUnit1024</NoWarn>
+    <Nullable>disable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="xunit" Version="2.6.6" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.6" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(DesignTimeBuild)' == 'true'">
+    <ProjectReference Include="..\..\src\System.Private.Uri.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(DesignTimeBuild)' != 'true'">
+    <Compile Include="..\..\src\Common\System\Collections\Generic\ArrayBuilder.cs" Link="Common\ArrayBuilder.cs" />
+    <Compile Include="..\..\src\Common\System\Collections\Generic\LowLevelDictionary.cs" Link="Common\LowLevelDictionary.cs" />
+    <Compile Include="..\..\src\System\DomainNameHelper.cs" Link="System\DomainNameHelper.cs" />
+    <Compile Include="..\..\src\System\GenericUriParser.cs" Link="System\GenericUriParser.cs" />
+    <Compile Include="..\..\src\System\IPv4AddressHelper.cs" Link="System\IPv4AddressHelper.cs" />
+    <Compile Include="..\..\src\System\IPv6AddressHelper.cs" Link="System\IPv6AddressHelper.cs" />
+    <Compile Include="..\..\src\System\IriHelper.cs" Link="System\IriHelper.cs" />
+    <Compile Include="..\..\src\System\UncNameHelper.cs" Link="System\UncNameHelper.cs" />
+    <Compile Include="..\..\src\System\Uri.cs" Link="System\Uri.cs" />
+    <Compile Include="..\..\src\System\Uri.Windows.cs" Link="System\Uri.Windows.cs" />
+    <Compile Include="..\..\src\System\UriBuilder.cs" Link="System\UriBuilder.cs" />
+    <Compile Include="..\..\src\System\UriEnumTypes.cs" Link="System\UriEnumTypes.cs" />
+    <Compile Include="..\..\src\System\UriExt.cs" Link="System\UriExt.cs" />
+    <Compile Include="..\..\src\System\UriFormatException.cs" Link="System\UriFormatException.cs" />
+    <Compile Include="..\..\src\System\UriHelper.cs" Link="System\UriHelper.cs" />
+    <Compile Include="..\..\src\System\UriHostNameType.cs" Link="System\UriHostNameType.cs" />
+    <Compile Include="..\..\src\System\UriParserTemplates.cs" Link="System\UriParserTemplates.cs" />
+    <Compile Include="..\..\src\System\UriPartial.cs" Link="System\UriPartial.cs" />
+    <Compile Include="..\..\src\System\UriScheme.cs" Link="System\UriScheme.cs" />
+    <Compile Include="..\..\src\System\UriSyntax.cs" Link="System\UriSyntax.cs" />
+    <Compile Include="..\..\src\System\SR.cs" Link="System\SR.cs" />
+    <Compile Include="..\..\src\FxCopBaseline.cs" Link="FxCopBaseline.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="AppxUriValue.cs" />
+    <Compile Include="IdnCheckHostNameTest.cs" />
+    <Compile Include="IdnDnsSafeHostTest.cs" />
+    <Compile Include="IdnHostNameValidationTest.cs" />
+    <Compile Include="IriEncodingDecodingTests.cs" />
+    <Compile Include="IriRelativeFileResolutionTest.cs" />
+    <Compile Include="IriTest.cs" />
+    <Compile Include="UriBuilderParameterTest.cs" />
+    <Compile Include="UriBuilderRefreshTest.cs" />
+    <Compile Include="UriBuilderTests.cs" />
+    <Compile Include="UriEscapingTest.cs" />
+    <Compile Include="UriGetComponentsTest.cs" />
+    <Compile Include="UriIpHostTest.cs" />
+    <Compile Include="UriIsWellFormedUriStringTest.cs" />
+    <Compile Include="UriMailToTest.cs" />
+    <Compile Include="UriParameterValidationTest.cs" />
+    <Compile Include="UriParserTest.cs" />
+    <Compile Include="UriRelativeResolutionTest.cs" />
+    <Compile Include="UriTests.cs" />
+    <Compile Include="WebSocketsUriParserTest.cs" />
+    <Compile Include="..\Common\System\ThreadCultureChange.cs" Link="Common\ThreadCultureChange.cs" />
+    <Compile Include="..\Common\System\PlatformDetection.cs" Link="Common\PlatformDetection.cs" />
+    <Compile Include="..\Common\Xunit\TestAttributes.cs" Link="Common\TestAttributes.cs" />
+    <Compile Include="..\Common\Xunit\AssertExtensions.cs" Link="Common\AssertExtensions.cs" />
+  </ItemGroup>
+
+</Project>
