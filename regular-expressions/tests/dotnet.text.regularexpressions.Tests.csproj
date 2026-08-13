@@ -1,0 +1,78 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>dotnet.text.regularexpressions.Tests</RootNamespace>
+    <AssemblyName>dotnet.text.regularexpressions.Tests</AssemblyName>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <!-- xUnit2008 is about regexes and isn't appropriate in the test project for regexes -->
+    <NoWarn>$(NoWarn);xUnit2008;xUnit1002;xUnit1013;xUnit1026;xUnit1009;xUnit1010;xUnit1012;xUnit1005;xUnit1006;xUnit1003;xUnit1011;xUnit1024;xUnit1025;SYSLIB0011</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Using Include="Microsoft.DotNet.RemoteExecutor" />
+    <Using Include="System" />
+    <Using Include="System.Buffers" />
+    <Using Include="System.Collections" />
+    <Using Include="System.Collections.Generic" />
+    <Using Include="System.ComponentModel" />
+    <Using Include="System.Diagnostics" />
+    <Using Include="System.Diagnostics.CodeAnalysis" />
+    <Using Include="System.Globalization" />
+    <Using Include="System.IO" />
+    <Using Include="System.Linq" />
+    <Using Include="System.Reflection" />
+    <Using Include="System.Runtime.CompilerServices" />
+    <Using Include="System.Runtime.InteropServices" />
+    <Using Include="System.Runtime.Serialization" />
+    <Using Include="System.Runtime.Serialization.Formatters.Binary" />
+    <Using Include="System.Tests" />
+    <Using Include="System.Text" />
+    <Using Include="System.Threading" />
+    <Using Include="Xunit" />
+    <Using Include="Xunit.Sdk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TestUtilities\**\*.cs" />
+    <Compile Include="AttRegexTests.cs" />
+    <Compile Include="CaptureCollectionTests.cs" />
+    <Compile Include="GroupCollectionTests.cs" />
+    <Compile Include="MatchCollectionTests.cs" />
+    <Compile Include="MonoRegexTests.cs" />
+    <Compile Include="Regex.CompileToAssembly.Tests.cs" />
+    <Compile Include="Regex.Ctor.Tests.cs" />
+    <Compile Include="Regex.Cache.Tests.cs" />
+    <Compile Include="Regex.EscapeUnescape.Tests.cs" />
+    <Compile Include="Regex.GetGroupNames.Tests.cs" />
+    <Compile Include="Regex.Groups.Tests.cs" />
+    <Compile Include="Regex.KnownPattern.Tests.cs" />
+    <Compile Include="Regex.Match.Tests.cs" />
+    <Compile Include="Regex.MultipleMatches.Tests.cs" />
+    <Compile Include="Regex.Replace.Tests.cs" />
+    <Compile Include="Regex.Split.Tests.cs" />
+    <Compile Include="Regex.Tests.Common.cs" />
+    <Compile Include="Regex.UnicodeChar.Tests.cs" />
+    <Compile Include="RegexCharacterSetTests.cs" />
+    <Compile Include="RegexCompilationHelper.cs" />
+    <Compile Include="RegexCultureTests.cs" />
+    <Compile Include="RegexMatchTimeoutExceptionTests.cs" />
+    <Compile Include="RegexParserTests.cs" />
+    <Compile Include="RegexReductionTests.cs" />
+    <Compile Include="GroupCollectionReadOnlyDictionaryTests.cs" />
+    <Compile Include="CaptureCollectionTests2.cs" />
+    <Compile Include="GroupCollectionTests2.cs" />
+    <Compile Include="MatchCollectionTests2.cs" />
+    <Compile Include="PrecompiledRegexScenarioTest.cs" />
+    <Compile Include="RegexCompilationInfoTests.cs" />
+    <Compile Include="RegexGroupNameTests.cs" />
+    <Compile Include="RegexParserTests.netcoreapp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\src\dotnet.text.regularexpressions.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+    <PackageReference Include="System.Runtime.Serialization.Formatters" Version="9.0.0" />
+  </ItemGroup>
+</Project>

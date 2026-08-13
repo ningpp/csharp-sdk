@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xml.ReadContentAs.Tests", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xml.XmlDocument.Tests", "xml\tests\XmlDocument\XmlDocument.Tests.csproj", "{C3D4E5F6-A7B8-9012-CDEF-123456789012}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet.text.regularexpressions", "regular-expressions\src\dotnet.text.regularexpressions.csproj", "{1A2B3C4D-5E6F-7890-ABCD-1234567890AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet.text.regularexpressions.Tests", "regular-expressions\tests\dotnet.text.regularexpressions.Tests.csproj", "{2B3C4D5E-6F70-8901-BCDE-234567890ABC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,5 +55,13 @@ Global
 		{C3D4E5F6-A7B8-9012-CDEF-123456789012}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3D4E5F6-A7B8-9012-CDEF-123456789012}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3D4E5F6-A7B8-9012-CDEF-123456789012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A2B3C4D-5E6F-7890-ABCD-1234567890AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A2B3C4D-5E6F-7890-ABCD-1234567890AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A2B3C4D-5E6F-7890-ABCD-1234567890AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A2B3C4D-5E6F-7890-ABCD-1234567890AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B3C4D5E-6F70-8901-BCDE-234567890ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B3C4D5E-6F70-8901-BCDE-234567890ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B3C4D5E-6F70-8901-BCDE-234567890ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B3C4D5E-6F70-8901-BCDE-234567890ABC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
