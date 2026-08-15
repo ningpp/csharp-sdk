@@ -20,9 +20,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet.text.regularexpressions", "regular-expressions\src\dotnet.text.regularexpressions.csproj", "{1A2B3C4D-5E6F-7890-ABCD-1234567890AB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet.text.regularexpressions.Tests", "regular-expressions\tests\dotnet.text.regularexpressions.Tests.csproj", "{2B3C4D5E-6F70-8901-BCDE-234567890ABC}"
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet.text.json", "json\src\System.Text.Json.csproj", "{79E7EE4E-E8DF-4D67-B103-6930DAAF6EF4}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet.text.json.Tests", "json\tests\System.Text.Json.Tests.csproj", "{5F553243-042C-45C0-8E49-C739131E11C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,14 +27,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{79E7EE4E-E8DF-4D67-B103-6930DAAF6EF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79E7EE4E-E8DF-4D67-B103-6930DAAF6EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{79E7EE4E-E8DF-4D67-B103-6930DAAF6EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{79E7EE4E-E8DF-4D67-B103-6930DAAF6EF4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5F553243-042C-45C0-8E49-C739131E11C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5F553243-042C-45C0-8E49-C739131E11C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5F553243-042C-45C0-8E49-C739131E11C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5F553243-042C-45C0-8E49-C739131E11C3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4AC5343E-6E31-4BA5-A795-0493AE7E9008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4AC5343E-6E31-4BA5-A795-0493AE7E9008}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AC5343E-6E31-4BA5-A795-0493AE7E9008}.Release|Any CPU.ActiveCfg = Release|Any CPU
