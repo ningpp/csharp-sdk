@@ -333,11 +333,7 @@ namespace dotnet.text.json.Serialization.Tests
 
         private static int SingleToInt32Bits(float value)
         {
-#if BUILDING_INBOX_LIBRARY
             return BitConverter.SingleToInt32Bits(value);
-#else
-            return Unsafe.As<float, int>(ref value);
-#endif
         }
 
         private static void AssertFloatingPointBehavior<T>(T netcoreExpectedValue, Func<T> testCode)
@@ -405,17 +401,12 @@ namespace dotnet.text.json.Serialization.Tests
             string json;
             char fillChar = 'x';
 
-#if BUILDING_INBOX_LIBRARY
             json = string.Create(stringLength, fillChar, (chars, fillChar) =>
             {
                 chars.Fill(fillChar);
                 chars[0] = '"';
                 chars[chars.Length - 1] = '"';
             });
-#else
-            string repeated = new string(fillChar, stringLength - 2);
-            json = $"\"{repeated}\"";
-#endif
             Assert.Equal(stringLength, json.Length);
 
             string str = JsonSerializer.Deserialize<string>(json);

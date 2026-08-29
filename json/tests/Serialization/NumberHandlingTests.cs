@@ -380,17 +380,7 @@ namespace dotnet.text.json.Serialization.Tests
                 }
                 else if (reader.TokenType == JsonTokenType.String)
                 {
-#if BUILDING_INBOX_LIBRARY
                     Assert.False(reader.ValueSpan.Contains((byte)'\\'));
-#else
-                    foreach (byte val in reader.ValueSpan)
-                    {
-                        if (val == (byte)'\\')
-                        {
-                            Assert.True(false, "Unexpected escape token.");
-                        }
-                    }
-#endif
                 }
                 else
                 {
@@ -823,21 +813,7 @@ namespace dotnet.text.json.Serialization.Tests
                 else
                 {
                     Assert.Equal(JsonTokenType.String, reader.TokenType);
-#if BUILDING_INBOX_LIBRARY
                     Assert.True(reader.ValueSpan.Contains((byte)'\\'));
-#else
-                    bool foundBackSlash = false;
-                    foreach (byte val in reader.ValueSpan)
-                    {
-                        if (val == (byte)'\\')
-                        {
-                            foundBackSlash = true;
-                            break;
-                        }
-                    }
-
-                    Assert.True(foundBackSlash, "Expected escape token.");
-#endif
                 }
             }
         }
@@ -855,17 +831,7 @@ namespace dotnet.text.json.Serialization.Tests
                 else
                 {
                     Assert.Equal(JsonTokenType.String, reader.TokenType);
-#if BUILDING_INBOX_LIBRARY
                     Assert.False(reader.ValueSpan.Contains((byte)'\\'));
-#else
-                    foreach (byte val in reader.ValueSpan)
-                    {
-                        if (val == (byte)'\\')
-                        {
-                            Assert.True(false, "Unexpected escape token.");
-                        }
-                    }
-#endif
                 }
             }
         }

@@ -5,12 +5,12 @@
     <RootNamespace>dotnet.text.json.Tests</RootNamespace>
     <AssemblyName>dotnet.text.json.Tests</AssemblyName>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <DefineConstants>$(DefineConstants);BUILDING_INBOX_LIBRARY</DefineConstants>
     <NoWarn>$(NoWarn);xUnit1002;xUnit1016;xUnit1026;CS8352;CS8350;CS8347</NoWarn>
     <EnableNETAnalyzers>false</EnableNETAnalyzers>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="CommonTest\System\IO\WrappedMemoryStream.cs" Link="CommonTest\System\IO\WrappedMemoryStream.cs" />
+    <Compile Include="AssemblyResolutionTests.cs" />
     <Compile Include="TestUtilities.cs" />
     <Compile Include="GlobalUsings.cs" />
     <Compile Include="TestData.cs" />

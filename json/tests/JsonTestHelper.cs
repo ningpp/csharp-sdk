@@ -17,13 +17,11 @@ namespace dotnet.text.json
 {
     internal static class JsonTestHelper
     {
-#if BUILDING_INBOX_LIBRARY
+        // The library under test is built as a standalone library on a modern .NET runtime,
+        // where double/float ToString() produces the shortest round-trippable representation,
+        // so no format string is needed.
         public const string DoubleFormatString = null;
         public const string SingleFormatString = null;
-#else
-        public const string DoubleFormatString = "G17";
-        public const string SingleFormatString = "G9";
-#endif
 
         private const string CompiledNewline = @"
 ";
