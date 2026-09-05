@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>dotnet.xml.XPath</AssemblyName>
+    <Nullable>disable</Nullable>
+    <IsPackable>false</IsPackable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <RootNamespace>dotnet.xml.XPath</RootNamespace>
+    <DefineConstants>$(DefineConstants);FEATURE_XML_XPATH_ID</DefineConstants>
+    <DefaultItemExcludes>$(DefaultItemExcludes);**/bin/**;**/obj/**</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.*" />
+    <PackageReference Include="xunit" Version="2.*" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\dotnet-xml.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Compile all C# files except the legacy project files, the conflicting XmlDocument navigator wiring,
+         and the test class that depends on System.Xml.Linq (XElement/XPathEvaluate). -->
+    <Compile Remove="**\*.csproj" />
+    <Compile Remove="XmlDocument\XmlDocumentXPathTest.cs" />
+    <Compile Remove="XPathExpressionTests\EvaluateTests.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="TestData\*.xml">
+      <LogicalName>System.Xml.XPath.Tests.TestData.%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

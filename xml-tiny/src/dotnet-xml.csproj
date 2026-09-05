@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>dotnet.xml</AssemblyName>
+    <RootNamespace>dotnet.xml</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS0649;CS0169;CS0414;CS0436;CS8600;CS8601;CS8602;CS8603;CS8604;CS8618;CS8625</NoWarn>
+    <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <DefineConstants>$(DefineConstants);FEATURE_COMPILED_XSL</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Exclude files that don't exist or cause issues -->
+    <Compile Remove="**\*.old.cs" />
+
+    <!-- Exclude platform-specific files - keep only Windows on Windows -->
+    <Compile Remove="**\*.Unix.cs" />
+    <Compile Remove="**\*.OSX.cs" />
+
+    <!-- Xsl/Xslt full implementation now included -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Embed XmlCharType.bin as a resource -->
+    <EmbeddedResource Include="System\Xml\XmlCharType.bin" LogicalName="XmlCharType.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Globally provide the System namespace since the copied sources rely on implicit System usings -->
+    <Using Include="System" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.0" />
+  </ItemGroup>
+
+</Project>
