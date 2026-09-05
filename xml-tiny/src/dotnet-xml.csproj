@@ -40,4 +40,8 @@
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\uri\src\System.Private.Uri.csproj" />
+  </ItemGroup>
+
 </Project>

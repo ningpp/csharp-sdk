@@ -162,5 +162,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\src\System.Text.Json.csproj" />
+    <ProjectReference Include="..\..\uri\src\System.Private.Uri.csproj" />
   </ItemGroup>
 </Project>
