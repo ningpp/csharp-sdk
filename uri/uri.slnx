@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/System.Private.Uri.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/ExtendedFunctionalTests/">
+    <Project Path="tests/ExtendedFunctionalTests/System.Private.Uri.ExtendedFunctional.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tests/FunctionalTests/">
+    <Project Path="tests/FunctionalTests/System.Private.Uri.Functional.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tests/UnitTests/">
+    <Project Path="tests/UnitTests/System.Private.Uri.Unit.Tests.csproj" />
+  </Folder>
+</Solution>

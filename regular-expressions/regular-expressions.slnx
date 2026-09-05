@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/dotnet.text.regularexpressions.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/dotnet.text.regularexpressions.Tests.csproj" />
+  </Folder>
+</Solution>
