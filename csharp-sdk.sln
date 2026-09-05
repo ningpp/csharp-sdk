@@ -11,15 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Private.Uri.Function
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Private.Uri.ExtendedFunctional.Tests", "uri\tests\ExtendedFunctionalTests\System.Private.Uri.ExtendedFunctional.Tests.csproj", "{0FEBE054-68AC-446F-B999-9068736D3CEC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "System.Private.Xml", "xml\src\System.Private.Xml.csproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xml.ReadContentAs.Tests", "xml\tests\ReadContentAs\ReadContentAs.Tests.csproj", "{B2C3D4E5-F6A7-8901-BCDE-F12345678901}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xml.XmlDocument.Tests", "xml\tests\XmlDocument\XmlDocument.Tests.csproj", "{C3D4E5F6-A7B8-9012-CDEF-123456789012}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet.text.regularexpressions", "regular-expressions\src\dotnet.text.regularexpressions.csproj", "{1A2B3C4D-5E6F-7890-ABCD-1234567890AB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet.text.regularexpressions.Tests", "regular-expressions\tests\dotnet.text.regularexpressions.Tests.csproj", "{2B3C4D5E-6F70-8901-BCDE-234567890ABC}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet.text.json", "json\src\System.Text.Json.csproj", "{79E7EE4E-E8DF-4D67-B103-6930DAAF6EF4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet.text.json.Tests", "json\tests\System.Text.Json.Tests.csproj", "{5F553243-042C-45C0-8E49-C739131E11C3}"
@@ -54,18 +49,6 @@ Global
 		{0FEBE054-68AC-446F-B999-9068736D3CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FEBE054-68AC-446F-B999-9068736D3CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FEBE054-68AC-446F-B999-9068736D3CEC}.Release|Any CPU.Build.0 = Release|Any 
-		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B2C3D4E5-F6A7-8901-BCDE-F12345678901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B2C3D4E5-F6A7-8901-BCDE-F12345678901}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B2C3D4E5-F6A7-8901-BCDE-F12345678901}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B2C3D4E5-F6A7-8901-BCDE-F12345678901}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C3D4E5F6-A7B8-9012-CDEF-123456789012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C3D4E5F6-A7B8-9012-CDEF-123456789012}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C3D4E5F6-A7B8-9012-CDEF-123456789012}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C3D4E5F6-A7B8-9012-CDEF-123456789012}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1A2B3C4D-5E6F-7890-ABCD-1234567890AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1A2B3C4D-5E6F-7890-ABCD-1234567890AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A2B3C4D-5E6F-7890-ABCD-1234567890AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
