@@ -227,6 +227,6 @@
     <Compile Include="System\Text\Json\Writer\Utf8JsonWriter.WriteValues.UnsignedNumber.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\uri\src\System.Private.Uri.csproj" />
+    <ProjectReference Include="..\..\uri\src\dotnet-uri.csproj" />
   </ItemGroup>
 </Project>

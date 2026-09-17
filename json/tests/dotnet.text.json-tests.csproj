@@ -161,7 +161,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\System.Text.Json.csproj" />
-    <ProjectReference Include="..\..\uri\src\System.Private.Uri.csproj" />
+    <ProjectReference Include="..\src\dotnet.text.json.csproj" />
+    <ProjectReference Include="..\..\uri\src\dotnet-uri.csproj" />
   </ItemGroup>
 </Project>

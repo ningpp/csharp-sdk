@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
-    <AssemblyName>dotnet.xml.CoreTests</AssemblyName>
-    <RootNamespace>dotnet.xml.CoreTests</RootNamespace>
+    <AssemblyName>dotnet.xml.XmlDiff</AssemblyName>
+    <RootNamespace>dotnet.xml.XmlDiff</RootNamespace>
     <Nullable>disable</Nullable>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -11,8 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ModuleCore\ModuleCore.csproj" />
-    <ProjectReference Include="..\XmlDiff\XmlDiff.csproj" />
+    <ProjectReference Include="..\ModuleCore\dotnet-xml.modulecore-tests.csproj" />
+    <ProjectReference Include="..\..\..\src\dotnet-xml.csproj" />
   </ItemGroup>
 
   <ItemGroup>

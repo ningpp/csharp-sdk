@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup Condition="'$(DesignTimeBuild)' == 'true'">
-    <ProjectReference Include="..\..\src\System.Private.Uri.csproj" />
+    <ProjectReference Include="..\..\src\dotnet-uri.csproj" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(DesignTimeBuild)' != 'true'">

@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Common\ModuleCore\ModuleCore.csproj" />
-    <ProjectReference Include="..\Common\XmlCoreTest\XmlCoreTest.csproj" />
+    <ProjectReference Include="..\Common\ModuleCore\dotnet-xml.modulecore-tests.csproj" />
+    <ProjectReference Include="..\Common\XmlCoreTest\dotnet-xml.xmlcoretest-tests.csproj" />
     <ProjectReference Include="..\..\src\dotnet-xml.csproj" />
   </ItemGroup>
 

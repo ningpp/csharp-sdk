@@ -5,17 +5,17 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-xml", "src\dotnet-xml.csproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-xml.read-content-as", "Tests\XmlReader\ReadContentAs\dotnet-xml.read-content-as.csproj", "{B2C3D4E5-F6A7-8901-BCDE-F12345678901}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-xml.read-content-as-tests", "Tests\XmlReader\ReadContentAs\dotnet-xml.read-content-as-tests.csproj", "{B2C3D4E5-F6A7-8901-BCDE-F12345678901}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-xml.document-tests", "Tests\XmlDocument\dotnet-xml.document-tests.csproj", "{C3D4E5F6-A7B8-9012-CDEF-123456789012}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-xml.serializer-tests", "Tests\XmlSerializer\dotnet-xml.serializer-tests.csproj", "{D4E5F6A7-B8C9-0123-DEF0-234567890123}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-xml.xpath.xpathdocument", "Tests\XPath\XPathDocument\dotnet-xml.xpath.xpathdocument.csproj", "{E5F6A7B8-C9D0-1234-EF01-345678901234}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-xml.xpath.xpathdocument-tests", "Tests\XPath\XPathDocument\dotnet-xml.xpath.xpathdocument-tests.csproj", "{E5F6A7B8-C9D0-1234-EF01-345678901234}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-xml.xpath.document", "Tests\XPath\XmlDocument\dotnet-xml.xpath.document.csproj", "{F6A7B8C9-D0E1-2345-F012-456789012345}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-xml.xpath.document-tests", "Tests\XPath\XmlDocument\dotnet-xml.xpath.document-tests.csproj", "{F6A7B8C9-D0E1-2345-F012-456789012345}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-xml.xpath", "Tests\XPath\dotnet-xml.xpath.csproj", "{A7B8C9D0-E1F2-3456-0123-567890123456}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-xml.xpath-tests", "Tests\XPath\dotnet-xml.xpath-tests.csproj", "{A7B8C9D0-E1F2-3456-0123-567890123456}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-xml.convert-tests", "Tests\XmlConvert\dotnet-xml.convert-tests.csproj", "{B8C9D0E1-F2A3-4567-1234-678901234567}"
 EndProject

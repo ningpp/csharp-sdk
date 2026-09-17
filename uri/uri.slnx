@@ -1,15 +1,15 @@
 <Solution>
   <Folder Name="/src/">
-    <Project Path="src/System.Private.Uri.csproj" />
+    <Project Path="src/dotnet-uri.csproj" />
   </Folder>
   <Folder Name="/tests/" />
   <Folder Name="/tests/ExtendedFunctionalTests/">
-    <Project Path="tests/ExtendedFunctionalTests/System.Private.Uri.ExtendedFunctional.Tests.csproj" />
+    <Project Path="tests/ExtendedFunctionalTests/dotnet-uri-extendedfunctional-tests.csproj" />
   </Folder>
   <Folder Name="/tests/FunctionalTests/">
-    <Project Path="tests/FunctionalTests/System.Private.Uri.Functional.Tests.csproj" />
+    <Project Path="tests/FunctionalTests/dotnet-uri-functional-tests.csproj" />
   </Folder>
   <Folder Name="/tests/UnitTests/">
-    <Project Path="tests/UnitTests/System.Private.Uri.Unit.Tests.csproj" />
+    <Project Path="tests/UnitTests/dotnet-uri-unit-tests.csproj" />
   </Folder>
 </Solution>

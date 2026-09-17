@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Private.Uri", "uri\src\System.Private.Uri.csproj", "{4AC5343E-6E31-4BA5-A795-0493AE7E9008}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-uri", "uri\src\dotnet-uri.csproj", "{4AC5343E-6E31-4BA5-A795-0493AE7E9008}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Private.Uri.Unit.Tests", "uri\tests\UnitTests\System.Private.Uri.Unit.Tests.csproj", "{96AF3242-A368-4F13-B006-A722CC3B8517}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-uri-unit-tests", "uri\tests\UnitTests\dotnet-uri-unit-tests.csproj", "{96AF3242-A368-4F13-B006-A722CC3B8517}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Private.Uri.Functional.Tests", "uri\tests\FunctionalTests\System.Private.Uri.Functional.Tests.csproj", "{B0FFC4A8-BAC3-4A7F-8FD5-5B680209371C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-uri-functional-tests", "uri\tests\FunctionalTests\dotnet-uri-functional-tests.csproj", "{B0FFC4A8-BAC3-4A7F-8FD5-5B680209371C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Private.Uri.ExtendedFunctional.Tests", "uri\tests\ExtendedFunctionalTests\System.Private.Uri.ExtendedFunctional.Tests.csproj", "{0FEBE054-68AC-446F-B999-9068736D3CEC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-uri-extendedfunctional-tests", "uri\tests\ExtendedFunctionalTests\dotnet-uri-extendedfunctional-tests.csproj", "{0FEBE054-68AC-446F-B999-9068736D3CEC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet.text.regularexpressions", "regular-expressions\src\dotnet.text.regularexpressions.csproj", "{1A2B3C4D-5E6F-7890-ABCD-1234567890AB}"
 EndProject
@@ -27,7 +27,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XmlReader", "XmlReader", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReadContentAs", "ReadContentAs", "{54D67B8C-E7B5-8950-3CC2-C7717313682C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-xml.read-content-as", "xml-tiny\Tests\XmlReader\ReadContentAs\dotnet-xml.read-content-as.csproj", "{A197CEE2-DFC1-4B03-9AD1-A091E621A672}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-xml.read-content-as-tests", "xml-tiny\Tests\XmlReader\ReadContentAs\dotnet-xml.read-content-as-tests.csproj", "{A197CEE2-DFC1-4B03-9AD1-A091E621A672}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XmlDocument", "XmlDocument", "{DE921B12-5284-5400-A592-68699FB65B77}"
 EndProject
@@ -41,13 +41,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XPath", "XPath", "{625B20D9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XPathDocument", "XPathDocument", "{C259EE7F-58B8-3DEE-3D20-B239B22A4E8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-xml.xpath.xpathdocument", "xml-tiny\Tests\XPath\XPathDocument\dotnet-xml.xpath.xpathdocument.csproj", "{1FA92855-A090-4852-AA39-6A9EC685F57C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-xml.xpath.xpathdocument-tests", "xml-tiny\Tests\XPath\XPathDocument\dotnet-xml.xpath.xpathdocument-tests.csproj", "{1FA92855-A090-4852-AA39-6A9EC685F57C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XmlDocument", "XmlDocument", "{CE7CC545-827B-68B3-F855-3D067CDA1777}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-xml.xpath.document", "xml-tiny\Tests\XPath\XmlDocument\dotnet-xml.xpath.document.csproj", "{C9933775-BE02-42AC-84F4-4114351526DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-xml.xpath.document-tests", "xml-tiny\Tests\XPath\XmlDocument\dotnet-xml.xpath.document-tests.csproj", "{C9933775-BE02-42AC-84F4-4114351526DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-xml.xpath", "xml-tiny\Tests\XPath\dotnet-xml.xpath.csproj", "{2D365D3D-772D-4811-BA02-F84FA6783C4F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-xml.xpath-tests", "xml-tiny\Tests\XPath\dotnet-xml.xpath-tests.csproj", "{2D365D3D-772D-4811-BA02-F84FA6783C4F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XmlConvert", "XmlConvert", "{AC874A6E-3010-753A-7A74-D072085FB926}"
 EndProject
@@ -55,11 +55,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-xml.convert-tests", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{82DF2998-18C4-3C34-AA74-3535E28D8F41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleCore", "xml-tiny\Tests\Common\ModuleCore\ModuleCore.csproj", "{159C9498-1B16-478E-BBE4-99DEC77A48CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-xml.modulecore-tests", "xml-tiny\Tests\Common\ModuleCore\dotnet-xml.modulecore-tests.csproj", "{159C9498-1B16-478E-BBE4-99DEC77A48CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlCoreTest", "xml-tiny\Tests\Common\XmlCoreTest\XmlCoreTest.csproj", "{B2C81EC5-E8C4-4CC4-A02A-E70F31ACB884}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-xml.xmlcoretest-tests", "xml-tiny\Tests\Common\XmlCoreTest\dotnet-xml.xmlcoretest-tests.csproj", "{B2C81EC5-E8C4-4CC4-A02A-E70F31ACB884}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlDiff", "xml-tiny\Tests\Common\XmlDiff\XmlDiff.csproj", "{EB12F524-C997-4367-9459-F1758928EA62}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-xml.xmldiff-tests", "xml-tiny\Tests\Common\XmlDiff\dotnet-xml.xmldiff-tests.csproj", "{EB12F524-C997-4367-9459-F1758928EA62}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-xml.root-tests", "xml-tiny\tests\dotnet-xml.root-tests.csproj", "{5BC90D58-95F8-440C-AD43-7F182025E81A}"
 EndProject

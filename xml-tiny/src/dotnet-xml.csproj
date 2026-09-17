@@ -41,7 +41,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\uri\src\System.Private.Uri.csproj" />
+    <ProjectReference Include="..\..\uri\src\dotnet-uri.csproj" />
   </ItemGroup>
 
 </Project>
