@@ -1,0 +1,5 @@
+<A xmlns:p='nsp' xmlns='nsp'>
+  <B xmlns='nsp' i1='i1' p:i2='i2' xmlns:q='nsq' xmlns:p='nsp'>
+    <C xmlns='' p:i3='i3'/>
+  </B>
+</A>

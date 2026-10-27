@@ -1,0 +1,6 @@
+<?xml version='1.0' standalone="yes" ?>
+<!-- This file represents a fragment of a book store inventory database -->
+<author id='21'>
+    <first-name>Benjamin</first-name>
+    <last-name>Franklin</last-name>
+</author>

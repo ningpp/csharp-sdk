@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<A>
+  <X/>
+  <B a='a'>
+    <X1/>
+    <C b='b'/>
+    <X2/>
+    <C>
+      <D></D>
+    </C>
+  </B>
+  <B/>
+  <B>
+    <C id='a1'/>
+  </B>
+</A>

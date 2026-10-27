@@ -1,0 +1,5 @@
+<root>
+    <A/>
+    <A xmlns="x1"/>
+    <p:A xmlns:p="x2"/>
+</root>

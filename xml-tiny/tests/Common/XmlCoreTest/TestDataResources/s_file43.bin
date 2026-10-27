@@ -1,0 +1,12 @@
+<StreamingTests>
+    <Variation>
+        <file>namespaces.xml</file>
+        <root>{a}A</root>
+        <path>{b}B,{a}C</path>
+    </Variation>
+    <Variation>
+        <file>second.xml</file>
+        <root>A</root>
+        <path>B,C,D</path>
+    </Variation>
+</StreamingTests>

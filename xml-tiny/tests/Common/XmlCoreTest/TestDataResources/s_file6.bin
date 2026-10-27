@@ -1,0 +1,19 @@
+<!DOCTYPE doc [
+ <!ELEMENT doc ANY >
+ <!ELEMENT a ANY>
+   <!ATTLIST a xml:lang CDATA #IMPLIED>
+]>
+<doc>
+   <a xml:lang="de">
+      blar
+   </a>
+   <a xml:lang="en">
+      blar
+   </a>
+   <a xml:lang="en-GB">
+      blar
+   </a>
+   <a xml:lang="en-US">
+      blar
+   </a>
+</doc>

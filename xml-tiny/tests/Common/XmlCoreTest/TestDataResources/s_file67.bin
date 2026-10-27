@@ -1,0 +1,6 @@
+<complexType name="LonLatPt" xmlns:q1="http://www.w3.org/1999/XMLSchema">
+	<all>
+		<element name="Lon" type="q1:double"/>
+		<element name="Lat" xmlns:q2="http://www.w3.org/1999/XMLSchema" type= "q2:double"/>
+	</all>
+</complexType>

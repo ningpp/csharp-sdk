@@ -1,0 +1,47 @@
+<A>
+    <X/>
+    <B>
+        <Y>
+            <Z/>
+            <?PI click?>
+        </Y>
+        <C>
+            data
+        </C>
+        <Middle/>
+        <C/>
+        text in bewtween C
+        <C/>
+        <C/>
+    </B>
+    text in between B
+    <B>
+        <Prolog>tuto</Prolog>
+        <C/>
+        <C>
+            data
+        </C>
+        <C/>
+    </B>
+    <?PI in middle B?>
+    <B>
+        <C/>
+        <C>
+            data
+        </C>
+    </B>
+    <B>
+        <C/>
+        <C>
+            <Q/>
+        </C>
+        <C/>
+        <C/>
+        <!-- commnent in between -->
+        <C/>
+    </B>
+    <B>
+        <C/>
+        <C/>
+    </B>
+</A>

@@ -1,0 +1,14 @@
+<testSpec xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='\\webxtest\wdtest\common\testspec\cSpec-master.xsd'>
+  <global ctrlPath='.\' filePath='$(DataPath)\StandardTests\XML10\' httpPath=''></global>
+  <testCases name='XML Tests'>
+    <testCase name='xmltest' area='xmlconf' testCaseQuery='' uri='ms_xmltest.xml'/>
+    <!--<testCase name='oasis' area='xmlconf' testCaseQuery='' uri='ms_oasis.xml'/>
+    <testCase name='ibm' area='xmlconf' testCaseQuery='' uri='ms_ibm.xml'/>
+    <testCase name='sun' area='xmlconf' testCaseQuery='' uri='ms_sun.xml'/>
+    <testCase name='japanese' area='xmlconf' testCaseQuery='' uri='ms_japanese.xml'/>
+    <testCase name='DTD' area='MS DTD' testCaseQuery='' uri='ms_dtd.xml'/>
+    <testCase name='ms_XML' area='MS XML' testCaseQuery='' uri='ms_xml.xml'/>
+    <testCase name='errata10' area='MS Errata 10' testCaseQuery='' uri='ms_errata10.xml'/>
+    <testCase name='errata20' area='MS Errata 20' testCaseQuery='' uri='ms_errata20.xml'/>-->
+  </testCases>
+</testSpec>"

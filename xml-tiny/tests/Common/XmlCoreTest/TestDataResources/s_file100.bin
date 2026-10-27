@@ -1,0 +1,7 @@
+<level1
+  attr1="value1"
+  attr2="value2">
+  <level2
+    attr1="value1"
+    attr2="value2" />
+</level1>

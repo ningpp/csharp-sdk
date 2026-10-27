@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<ROOT>
+        <CustomerIDs>
+                <CustomerID> ANATR</CustomerID>
+                <CompanyName> Ana Trujillo Emparedados y helados</CompanyName>
+                <ContactName> Ana Trujillo</ContactName>
+                <OrderIDs>
+                        <Item>
+                                <OrderID> 10625</OrderID>
+                                <OrderDate> 9/8/95</OrderDate>
+                                <ShipAddress> Avda. de la Constitucion 2222</ShipAddress>
+                        </Item>
+                        <Item>
+                                <OrderID> 10625</OrderID>
+                                <OrderDate> 9/8/95</OrderDate>
+                                <ShipAddress> Avda. de la Constitucion 2222</ShipAddress>
+                        </Item>
+                        <Item>
+                                <OrderID> 10625</OrderID>
+                                <OrderDate> 9/8/95</OrderDate>
+                                <ShipAddress> Avda. de la Constitucion 2222</ShipAddress>
+                        </Item>
+                        <Item>
+                                <OrderID> 10625</OrderID>
+                                <OrderDate> 9/8/95</OrderDate>
+                                <ShipAddress> Avda. de la Constitucion 2222</ShipAddress>
+                        </Item>
+                        <Item>
+                                <OrderID> 10625</OrderID>
+                                <OrderDate> 9/8/95</OrderDate>
+                                <ShipAddress> Avda. de la Constitucion 2222</ShipAddress>
+                        </Item>
+                        <Item>
+                                <OrderID> 10625</OrderID>
+                                <OrderDate> 9/8/95</OrderDate>
+                                <ShipAddress> Avda. de la Constitucion 2222</ShipAddress>
+                        </Item>
+                        <Item>
+                                <OrderID> 10625</OrderID>
+                                <OrderDate> 9/8/95</OrderDate>
+                                <ShipAddress> Avda. de la Constitucion 2222</ShipAddress>
+                        </Item>
+                        <Item>
+                                <OrderID> 10625</OrderID>
+                                <OrderDate> 9/8/95</OrderDate>
+                                <ShipAddress> Avda. de la Constitucion 2222</ShipAddress>
+                        </Item>
+                        <Item>
+                                <OrderID> 10625</OrderID>
+                                <OrderDate> 9/8/95</OrderDate>
+                                <ShipAddress> Avda. de la Constitucion 2222</ShipAddress>
+                        </Item>
+                        <Item>
+                                <OrderID> 10625</OrderID>
+                                <OrderDate> 9/8/95</OrderDate>
+                                <ShipAddress> Avda. de la Constitucion 2222</ShipAddress>
+                        </Item>
+                        <Item>
+                                <OrderID> 10625</OrderID>
+                                <OrderDate> 9/8/95</OrderDate>
+                                <ShipAddress> Avda. de la Constitucion 2222</ShipAddress>
+                        </Item>
+                        <Item>
+                                <OrderID> 10625</OrderID>
+                                <OrderDate> 9/8/95</OrderDate>
+                                <ShipAddress> Avda. de la Constitucion 2222</ShipAddress>
+                        </Item>
+                        <Item>
+                                <OrderID> 10625</OrderID>
+                                <OrderDate> 9/8/95</OrderDate>
+                                <ShipAddress> Avda. de la Constitucion 2222</ShipAddress>
+                        </Item>
+                       <Item>
+                                <OrderID> 10625</OrderID>
+                                <OrderDate> 9/8/95</OrderDate>
+                                <ShipAddress> Avda. de la Constitucion 2222</ShipAddress>
+                        </Item>
+                        <Item>
+                                <OrderID> 10625</OrderID>
+                                <OrderDate> 9/8/95</OrderDate>
+                                <ShipAddress> Avda. de la Constitucion 2222</ShipAddress>
+                        </Item>
+                        <Item>
+                                <OrderID> 10625</OrderID>
+                                <OrderDate> 9/8/95</OrderDate>
+                                <ShipAddress> Avda. de la Constitucion 2222</ShipAddress>
+                        </Item>
+                        <Item>
+                                <OrderID> 10625</OrderID>
+                                <OrderDate> 9/8/95</OrderDate>
+                                <ShipAddress> Avda. de la Constitucion 2222</ShipAddress>
+                        </Item>
+                        <Item>
+                                <OrderID> 10625</OrderID>
+                                <OrderDate> 9/8/95</OrderDate>
+                                <ShipAddress> Avda. de la Constitucion 2222</ShipAddress>
+                        </Item>
+                        <Item>
+                                <OrderID> 10308</OrderID>
+                                <OrderDate> 10/19/94</OrderDate>
+                                <ShipAddress> Avda. de la Constitución 2222</ShipAddress>
+                        </Item>
+                </OrderIDs>
+        </CustomerIDs>
+</ROOT>

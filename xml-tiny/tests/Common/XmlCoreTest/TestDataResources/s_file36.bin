@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<?PI hua?>
+<A>
+    text
+    <X/>
+    <B>
+        <Y>
+            <Z/>
+            <?PI click?>
+        </Y>
+        <C>
+            data
+        </C>
+        <Middle/>
+        <C/>
+        text in bewtween C
+        <C/>
+        <C/>
+        <C xmlns='p1'/>
+    </B>
+    text in between B
+    <B>
+        <C/>
+        <C>
+            data
+        </C>
+        <C/>
+    </B>
+    <C/>
+    <?PI in middle B?>
+    <B>
+        <C/>
+        <C>
+            data
+        </C>
+        <B/>
+    </B>
+    <B>
+        <C/>
+        <C>
+            <Q/>
+        </C>
+        <C/>
+        <C/>
+        <!-- commnent in between -->
+        <C/>
+        <?PI ckuc?>
+    </B>
+    <B>
+        <C/>
+        <C/>
+        <Z/>
+    </B>
+    epilog1
+</A>

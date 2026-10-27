@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!-- This file represents a fragment of a book store inventory database -->
+<bookstore specialty="novel" xmlns:dt="http://www.magazines.com/" xmlns:my="http://www.books.com/">
+  <my:book style="autobiography">
+    <title>Seven Years in Trenton</title>
+    <author>
+      <first-name>Joe</first-name>
+      <last-name>Bob</last-name>
+      <!--Trenton Literary Review Honorable Mention-->
+      <my:country>USA</my:country>
+    </author>
+    <price>12</price>
+  </my:book>
+  <book style="textbook">
+    <title>History of Trenton</title>
+    <author>
+      <first-name>Mary</first-name>
+      <last-name>Bob</last-name>
+      <publication>
+        Selected Short Stories of
+        <first-name>JoeBob</first-name>
+        <last-name>Loser</last-name>
+        <country>US</country>
+      </publication>
+    </author>
+    <price>55</price>
+  </book>
+  <my:book style="storybook">
+    <title>XQL The Golden Years</title>
+    <author>
+      <first.name>Mike</first.name>
+      <last.name>Hyman</last.name>
+      <publication>
+        XQL For Dummies
+        <first.name>Jonathan</first.name>
+        <last.name>Marsh</last.name>
+      </publication>
+    </author>
+    <price dt:dt="fixed.14.4">55.95</price>
+  </my:book>
+  <dt:magazine style="glossy" frequency="monthly">
+    <title>Road and Track</title>
+    <price>3.50</price>
+    <subscription price="24" per="year"/>
+    <special_edition per_year="1">Yes</special_edition>
+  </dt:magazine>
+  <magazine style="glossy" frequency="weekly">
+    <title>PC Week</title>
+    <price>free</price>
+    <publisher>Ziff Davis</publisher>
+  </magazine>
+  <dt:magazine style="glossy" frequency="bi-monthly">
+    <title>PC Magazine</title>
+    <price dt:dt="fiXed.14.4">3.95</price>
+    <publisher>Ziff Davis</publisher>
+    <articles>
+      <story1>
+        Create a dream PC
+        <details>Create a list of needed hardware</details>
+      </story1>
+      <story2>
+        The future of the web
+        <details>Can Netscape stay alive with Microsoft eating up its browser share?</details>
+        <stock>MSFT 99.30</stock>
+        <date dt:dt="date">1998-06-23</date>
+      </story2>
+      <story3>
+        Visual Basic 5.0 - Will it stand the test of time?
+      </story3>
+    </articles>
+  </dt:magazine>
+  <magazine style="glossy" frequency="monthly">
+    <articles>
+      <story1>
+        Sport Cars - Can you really dream?
+      </story1>
+    </articles>
+  </magazine>
+  <magazine style="glossy" frequency="monthly">
+    <award>PC Magazine Best Product of 1997</award>
+  </magazine>
+  <dt:magazine style="flat" frequency="monthly">
+    <title>Tracking Trenton Stocks</title>
+    <price>0.98</price>
+    <subscription price="10.75" per="year"/>
+  </dt:magazine>
+  <my:book style="leather" price="29.50">
+    <my:title>Who's Who in Trenton</my:title>
+    <my:author>Robert Bob</my:author>
+  </my:book>
+  <my:book style="hard back" price="99.95">
+    <my:title>Where is Trenton?</my:title>
+  </my:book>
+  <my:book dt:style="string" style="hard back" price="19.99">
+    <my:title>Where in the world is Trenton?</my:title>
+  </my:book>
+</bookstore>

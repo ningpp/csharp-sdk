@@ -1,0 +1,19 @@
+<A xmlns='a'>
+    <B xmlns='x' />
+    <B xmlns='b'>
+        <C/>
+        <C xmlns='a'/>
+        <p:C xmlns:p='a'/>
+        <p:C xmlns:p='x'/>
+        <p:C xmlns:p='a'/>
+    </B>
+    <q:B xmlns:q='b'>
+        <C id='1'/>
+        <C id='2'/>
+        <q:C/>
+        text
+        <C/>
+        C
+    </q:B>
+    epilog
+</A>

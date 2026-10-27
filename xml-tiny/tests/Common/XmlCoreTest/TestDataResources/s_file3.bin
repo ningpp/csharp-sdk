@@ -1,0 +1,1023 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestModule Name="XmlWriter" Created="3/19/2004 5:15:17 PM" Modified="3/19/2004 5:15:17 PM" Version="1" Desc="XmlWriter.Create">
+
+  <Owner Alias="pjoshi,amolkh" Type="test" />
+
+  <Data>
+    <filepath>$(DataPath)\TestData\RWFactory</filepath>
+    <httppath></httppath>
+    <DriverFunction>XmlWriter</DriverFunction>
+    <ResultTypes>
+      <Type>Valid</Type>
+      <Type>Invalid</Type>
+    </ResultTypes>
+  </Data>
+
+  <TestCase Name="Writer Wrapping and Interactions Tests" Desc="XmlWriter.Create">
+    <Variation Id="1" Implemented="true" Pri="2" Desc="ConformanceLevel=Auto;CheckCharacters=true;WriterType=TextWriter;CloseOutput=true;OmitXmlDeclaration=false;NormalizeNewlines=true;NewLineChars=9;Indent=false;IndentChars=9;NewLineOnAttributes=true;Load=FileName">
+      <FilterCriteria>
+        <ConformanceLevel>Auto</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>TextWriter</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>9</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>9</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>FileName</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="2" Implemented="true" Pri="2" Desc="ConformanceLevel=Document;CheckCharacters=false;WriterType=UTF8Writer;CloseOutput=false;OmitXmlDeclaration=true;NormalizeNewlines=false;NewLineChars=13;Indent=true;IndentChars=10;NewLineOnAttributes=false;Load=InvalidUri">
+      <FilterCriteria>
+        <ConformanceLevel>Document</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>UTF8Writer</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>13</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>10</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>FileName</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="3" Implemented="true" Pri="2" Desc="ConformanceLevel=Fragment;CheckCharacters=false;WriterType=UTF8Writer;CloseOutput=true;OmitXmlDeclaration=false;NormalizeNewlines=false;NewLineChars=20;Indent=false;IndentChars=13;NewLineOnAttributes=false;Load=XmlDocumentWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Fragment</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>UTF8Writer</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>20</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>13</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>XmlDocumentWriter</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="4" Implemented="true" Pri="2" Desc="ConformanceLevel=Fragment;CheckCharacters=true;WriterType=TextWriter;CloseOutput=false;OmitXmlDeclaration=true;NormalizeNewlines=true;NewLineChars=10;Indent=true;IndentChars=20;NewLineOnAttributes=true;Load=FileName">
+      <FilterCriteria>
+        <ConformanceLevel>Fragment</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>TextWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>10</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>32</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>FileName</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="5" Implemented="true" Pri="2" Desc="ConformanceLevel=Auto;CheckCharacters=false;WriterType=UnicodeWriter;CloseOutput=true;OmitXmlDeclaration=true;NormalizeNewlines=false;NewLineChars=20;Indent=true;IndentChars=9;NewLineOnAttributes=true;Load=UTF8Writer">
+      <FilterCriteria>
+        <ConformanceLevel>Auto</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>UnicodeWriter</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>20</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>9</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>UTF8Writer</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="6" Implemented="true" Pri="2" Desc="ConformanceLevel=Document;CheckCharacters=true;WriterType=XmlDocumentWriter;CloseOutput=false;OmitXmlDeclaration=false;NormalizeNewlines=true;NewLineChars=13;Indent=false;IndentChars=20;NewLineOnAttributes=false;Load=StreamWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Document</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>XmlDocumentWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>13</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>32</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>StreamWriter</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="7" Implemented="true" Pri="2" Desc="ConformanceLevel=Document;CheckCharacters=true;WriterType=UTF8Writer;CloseOutput=true;OmitXmlDeclaration=true;NormalizeNewlines=true;NewLineChars=9;Indent=true;IndentChars=13;NewLineOnAttributes=true;Load=UnicodeWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Document</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>UTF8Writer</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>9</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>13</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>UnicodeWriter</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="8" Implemented="true" Pri="2" Desc="ConformanceLevel=Auto;CheckCharacters=false;WriterType=UnicodeWriter;CloseOutput=false;OmitXmlDeclaration=false;NormalizeNewlines=true;NewLineChars=10;Indent=false;IndentChars=10;NewLineOnAttributes=false;Load=StreamWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Auto</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>UnicodeWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>10</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>10</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>StreamWriter</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="9" Implemented="true" Pri="2" Desc="ConformanceLevel=Fragment;CheckCharacters=false;WriterType=XmlDocumentWriter;CloseOutput=true;OmitXmlDeclaration=true;NormalizeNewlines=false;NewLineChars=9;Indent=false;IndentChars=10;NewLineOnAttributes=true;Load=FileName">
+      <FilterCriteria>
+        <ConformanceLevel>Fragment</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>XmlDocumentWriter</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>9</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>10</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>FileName</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="10" Implemented="true" Pri="2" Desc="ConformanceLevel=Fragment;CheckCharacters=false;WriterType=UTF8Writer;CloseOutput=false;OmitXmlDeclaration=false;NormalizeNewlines=false;NewLineChars=13;Indent=true;IndentChars=9;NewLineOnAttributes=false;Load=FileName">
+      <FilterCriteria>
+        <ConformanceLevel>Fragment</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>UTF8Writer</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>13</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>9</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>FileName</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="11" Implemented="true" Pri="2" Desc="ConformanceLevel=Auto;CheckCharacters=true;WriterType=XmlDocumentWriter;CloseOutput=false;OmitXmlDeclaration=true;NormalizeNewlines=false;NewLineChars=10;Indent=true;IndentChars=13;NewLineOnAttributes=true;Load=XmlDocumentWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Auto</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>XmlDocumentWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>10</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>13</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>XmlDocumentWriter</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="12" Implemented="true" Pri="2" Desc="ConformanceLevel=Document;CheckCharacters=true;WriterType=UnicodeWriter;CloseOutput=false;OmitXmlDeclaration=false;NormalizeNewlines=true;NewLineChars=20;Indent=true;IndentChars=20;NewLineOnAttributes=false;Load=FileName">
+      <FilterCriteria>
+        <ConformanceLevel>Document</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>UnicodeWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>20</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>32</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>FileName</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="13" Implemented="true" Pri="2" Desc="ConformanceLevel=Auto;CheckCharacters=true;WriterType=XmlDocumentWriter;CloseOutput=true;OmitXmlDeclaration=false;NormalizeNewlines=true;NewLineChars=10;Indent=false;IndentChars=20;NewLineOnAttributes=true;Load=InvalidUri">
+      <FilterCriteria>
+        <ConformanceLevel>Auto</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>XmlDocumentWriter</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>10</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>32</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>FileName</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="14" Implemented="true" Pri="2" Desc="ConformanceLevel=Auto;CheckCharacters=false;WriterType=XmlDocumentWriter;CloseOutput=true;OmitXmlDeclaration=false;NormalizeNewlines=false;NewLineChars=13;Indent=true;IndentChars=20;NewLineOnAttributes=true;Load=FileName">
+      <FilterCriteria>
+        <ConformanceLevel>Auto</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>XmlDocumentWriter</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>13</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>32</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>FileName</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="15" Implemented="true" Pri="2" Desc="ConformanceLevel=Document;CheckCharacters=false;WriterType=TextWriter;CloseOutput=true;OmitXmlDeclaration=true;NormalizeNewlines=false;NewLineChars=9;Indent=false;IndentChars=9;NewLineOnAttributes=false;Load=StreamWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Document</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>TextWriter</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>9</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>9</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>FileName</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+          <ExceptionType>EType</ExceptionType>
+          <ExceptionMessage>EMessage</ExceptionMessage>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="16" Implemented="true" Pri="2" Desc="ConformanceLevel=Document;CheckCharacters=true;WriterType=UTF8Writer;CloseOutput=false;OmitXmlDeclaration=true;NormalizeNewlines=true;NewLineChars=10;Indent=true;IndentChars=10;NewLineOnAttributes=false;Load=StringBuilder">
+      <FilterCriteria>
+        <ConformanceLevel>Document</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>UTF8Writer</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>10</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>10</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>StringBuilder</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="17" Implemented="true" Pri="2" Desc="ConformanceLevel=Fragment;CheckCharacters=false;WriterType=XmlDocumentWriter;CloseOutput=false;OmitXmlDeclaration=false;NormalizeNewlines=false;NewLineChars=10;Indent=false;IndentChars=9;NewLineOnAttributes=false;Load=UnicodeWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Fragment</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>XmlDocumentWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>10</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>9</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>UnicodeWriter</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="18" Implemented="true" Pri="2" Desc="ConformanceLevel=Auto;CheckCharacters=true;WriterType=UTF8Writer;CloseOutput=false;OmitXmlDeclaration=false;NormalizeNewlines=false;NewLineChars=9;Indent=true;IndentChars=20;NewLineOnAttributes=true;Load=StringWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Auto</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>UTF8Writer</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>9</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>32</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>StringWriter</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="19" Implemented="true" Pri="2" Desc="ConformanceLevel=Document;CheckCharacters=false;WriterType=TextWriter;CloseOutput=false;OmitXmlDeclaration=true;NormalizeNewlines=false;NewLineChars=13;Indent=true;IndentChars=13;NewLineOnAttributes=false;Load=FileName">
+      <FilterCriteria>
+        <ConformanceLevel>Document</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>TextWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>13</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>13</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>FileName</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="20" Implemented="true" Pri="2" Desc="ConformanceLevel=Fragment;CheckCharacters=true;WriterType=XmlDocumentWriter;CloseOutput=false;OmitXmlDeclaration=false;NormalizeNewlines=true;NewLineChars=20;Indent=false;IndentChars=10;NewLineOnAttributes=false;Load=UTF8Writer">
+      <FilterCriteria>
+        <ConformanceLevel>Fragment</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>XmlDocumentWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>20</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>10</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>UTF8Writer</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="21" Implemented="true" Pri="2" Desc="ConformanceLevel=Fragment;CheckCharacters=false;WriterType=XmlDocumentWriter;CloseOutput=true;OmitXmlDeclaration=false;NormalizeNewlines=false;NewLineChars=20;Indent=false;IndentChars=13;NewLineOnAttributes=true;Load=StringBuilder">
+      <FilterCriteria>
+        <ConformanceLevel>Fragment</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>XmlDocumentWriter</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>20</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>13</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>StringBuilder</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="22" Implemented="true" Pri="2" Desc="ConformanceLevel=Fragment;CheckCharacters=false;WriterType=TextWriter;CloseOutput=false;OmitXmlDeclaration=false;NormalizeNewlines=true;NewLineChars=20;Indent=true;IndentChars=10;NewLineOnAttributes=true;Load=StreamWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Fragment</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>TextWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>20</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>10</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>StreamWriter</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="23" Implemented="true" Pri="2" Desc="ConformanceLevel=Auto;CheckCharacters=true;WriterType=UTF8Writer;CloseOutput=true;OmitXmlDeclaration=false;NormalizeNewlines=true;NewLineChars=10;Indent=false;IndentChars=9;NewLineOnAttributes=false;Load=FileName">
+      <FilterCriteria>
+        <ConformanceLevel>Auto</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>UTF8Writer</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>10</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>9</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>FileName</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="24" Implemented="true" Pri="2" Desc="ConformanceLevel=Fragment;CheckCharacters=true;WriterType=XmlDocumentWriter;CloseOutput=false;OmitXmlDeclaration=true;NormalizeNewlines=true;NewLineChars=9;Indent=true;IndentChars=10;NewLineOnAttributes=true;Load=MemoryStream">
+      <FilterCriteria>
+        <ConformanceLevel>Fragment</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>XmlDocumentWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>9</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>10</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>MemoryStream</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="25" Implemented="true" Pri="2" Desc="ConformanceLevel=Document;CheckCharacters=false;WriterType=XmlDocumentWriter;CloseOutput=true;OmitXmlDeclaration=true;NormalizeNewlines=true;NewLineChars=13;Indent=false;IndentChars=9;NewLineOnAttributes=false;Load=StringWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Document</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>XmlDocumentWriter</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>13</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>9</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>StringWriter</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="26" Implemented="true" Pri="2" Desc="ConformanceLevel=Auto;CheckCharacters=false;WriterType=TextWriter;CloseOutput=false;OmitXmlDeclaration=true;NormalizeNewlines=false;NewLineChars=9;Indent=false;IndentChars=20;NewLineOnAttributes=true;Load=StringBuilder">
+      <FilterCriteria>
+        <ConformanceLevel>Auto</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>TextWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>9</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>32</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>StringBuilder</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="27" Implemented="true" Pri="2" Desc="ConformanceLevel=Document;CheckCharacters=false;WriterType=UnicodeWriter;CloseOutput=false;OmitXmlDeclaration=true;NormalizeNewlines=true;NewLineChars=20;Indent=true;IndentChars=13;NewLineOnAttributes=true;Load=FileName">
+      <FilterCriteria>
+        <ConformanceLevel>Document</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>UnicodeWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>20</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>13</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>FileName</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="28" Implemented="true" Pri="2" Desc="ConformanceLevel=Document;CheckCharacters=true;WriterType=UnicodeWriter;CloseOutput=false;OmitXmlDeclaration=false;NormalizeNewlines=true;NewLineChars=9;Indent=false;IndentChars=20;NewLineOnAttributes=true;Load=XmlDocumentWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Document</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>UnicodeWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>9</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>32</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>XmlDocumentWriter</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="29" Implemented="true" Pri="2" Desc="ConformanceLevel=Auto;CheckCharacters=false;WriterType=TextWriter;CloseOutput=true;OmitXmlDeclaration=false;NormalizeNewlines=false;NewLineChars=10;Indent=false;IndentChars=20;NewLineOnAttributes=false;Load=MemoryStream">
+      <FilterCriteria>
+        <ConformanceLevel>Auto</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>TextWriter</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>10</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>32</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>MemoryStream</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="30" Implemented="true" Pri="2" Desc="ConformanceLevel=Fragment;CheckCharacters=true;WriterType=UnicodeWriter;CloseOutput=true;OmitXmlDeclaration=false;NormalizeNewlines=true;NewLineChars=13;Indent=false;IndentChars=9;NewLineOnAttributes=true;Load=StringBuilder">
+      <FilterCriteria>
+        <ConformanceLevel>Fragment</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>UnicodeWriter</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>13</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>9</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>StringBuilder</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="31" Implemented="true" Pri="2" Desc="ConformanceLevel=Auto;CheckCharacters=true;WriterType=TextWriter;CloseOutput=true;OmitXmlDeclaration=false;NormalizeNewlines=true;NewLineChars=13;Indent=false;IndentChars=10;NewLineOnAttributes=false;Load=XmlDocumentWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Auto</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>TextWriter</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>13</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>10</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>XmlDocumentWriter</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="32" Implemented="true" Pri="2" Desc="ConformanceLevel=Fragment;CheckCharacters=true;WriterType=UnicodeWriter;CloseOutput=false;OmitXmlDeclaration=false;NormalizeNewlines=true;NewLineChars=20;Indent=true;IndentChars=13;NewLineOnAttributes=false;Load=InvalidUri">
+      <FilterCriteria>
+        <ConformanceLevel>Fragment</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>UnicodeWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>20</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>13</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>FileName</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="33" Implemented="true" Pri="2" Desc="ConformanceLevel=Fragment;CheckCharacters=false;WriterType=TextWriter;CloseOutput=false;OmitXmlDeclaration=false;NormalizeNewlines=false;NewLineChars=10;Indent=false;IndentChars=10;NewLineOnAttributes=false;Load=StringWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Fragment</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>TextWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>10</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>10</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>StringWriter</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="34" Implemented="true" Pri="2" Desc="ConformanceLevel=Document;CheckCharacters=false;WriterType=TextWriter;CloseOutput=true;OmitXmlDeclaration=true;NormalizeNewlines=true;NewLineChars=13;Indent=false;IndentChars=20;NewLineOnAttributes=true;Load=UTF8Writer">
+      <FilterCriteria>
+        <ConformanceLevel>Document</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>TextWriter</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>13</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>32</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>UTF8Writer</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="35" Implemented="true" Pri="2" Desc="ConformanceLevel=Document;CheckCharacters=true;WriterType=UTF8Writer;CloseOutput=true;OmitXmlDeclaration=true;NormalizeNewlines=true;NewLineChars=10;Indent=true;IndentChars=13;NewLineOnAttributes=true;Load=StreamWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Document</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>UTF8Writer</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>10</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>13</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>StreamWriter</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="36" Implemented="true" Pri="2" Desc="ConformanceLevel=Fragment;CheckCharacters=false;WriterType=TextWriter;CloseOutput=false;OmitXmlDeclaration=true;NormalizeNewlines=true;NewLineChars=9;Indent=true;IndentChars=9;NewLineOnAttributes=false;Load=InvalidUri">
+      <FilterCriteria>
+        <ConformanceLevel>Fragment</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>TextWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>9</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>9</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>FileName</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="37" Implemented="true" Pri="2" Desc="ConformanceLevel=Auto;CheckCharacters=false;WriterType=TextWriter;CloseOutput=true;OmitXmlDeclaration=false;NormalizeNewlines=true;NewLineChars=20;Indent=true;IndentChars=13;NewLineOnAttributes=true;Load=StringWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Auto</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>TextWriter</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>20</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>13</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>FileName</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="38" Implemented="true" Pri="2" Desc="ConformanceLevel=Document;CheckCharacters=true;WriterType=TextWriter;CloseOutput=false;OmitXmlDeclaration=false;NormalizeNewlines=false;NewLineChars=13;Indent=true;IndentChars=9;NewLineOnAttributes=true;Load=MemoryStream">
+      <FilterCriteria>
+        <ConformanceLevel>Document</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>TextWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>13</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>9</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>MemoryStream</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="39" Implemented="true" Pri="2" Desc="ConformanceLevel=Fragment;CheckCharacters=true;WriterType=TextWriter;CloseOutput=false;OmitXmlDeclaration=true;NormalizeNewlines=false;NewLineChars=20;Indent=false;IndentChars=10;NewLineOnAttributes=false;Load=StringBuilder">
+      <FilterCriteria>
+        <ConformanceLevel>Fragment</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>TextWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>20</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>10</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>FileName</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="40" Implemented="true" Pri="2" Desc="ConformanceLevel=Document;CheckCharacters=true;WriterType=UTF8Writer;CloseOutput=true;OmitXmlDeclaration=true;NormalizeNewlines=true;NewLineChars=9;Indent=true;IndentChars=13;NewLineOnAttributes=true;Load=UTF8Writer">
+      <FilterCriteria>
+        <ConformanceLevel>Document</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>UTF8Writer</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>9</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>13</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>UTF8Writer</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="41" Implemented="true" Pri="2" Desc="ConformanceLevel=Auto;CheckCharacters=false;WriterType=TextWriter;CloseOutput=true;OmitXmlDeclaration=true;NormalizeNewlines=false;NewLineChars=20;Indent=false;IndentChars=20;NewLineOnAttributes=true;Load=UnicodeWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Auto</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>TextWriter</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>20</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>32</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>UnicodeWriter</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="42" Implemented="true" Pri="2" Desc="ConformanceLevel=Auto;CheckCharacters=false;WriterType=UnicodeWriter;CloseOutput=false;OmitXmlDeclaration=true;NormalizeNewlines=false;NewLineChars=13;Indent=true;IndentChars=10;NewLineOnAttributes=false;Load=UnicodeWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Auto</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>UnicodeWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>13</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>10</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>UnicodeWriter</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="43" Implemented="true" Pri="2" Desc="ConformanceLevel=Document;CheckCharacters=false;WriterType=UTF8Writer;CloseOutput=true;OmitXmlDeclaration=true;NormalizeNewlines=true;NewLineChars=20;Indent=true;IndentChars=13;NewLineOnAttributes=true;Load=MemoryStream">
+      <FilterCriteria>
+        <ConformanceLevel>Document</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>UTF8Writer</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>20</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>13</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>MemoryStream</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="44" Implemented="true" Pri="2" Desc="ConformanceLevel=Document;CheckCharacters=false;WriterType=UTF8Writer;CloseOutput=false;OmitXmlDeclaration=true;NormalizeNewlines=false;NewLineChars=13;Indent=true;IndentChars=10;NewLineOnAttributes=true;Load=FileName">
+      <FilterCriteria>
+        <ConformanceLevel>Document</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>UTF8Writer</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>13</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>10</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>FileName</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="45" Implemented="true" Pri="2" Desc="ConformanceLevel=Auto;CheckCharacters=false;WriterType=UnicodeWriter;CloseOutput=true;OmitXmlDeclaration=true;NormalizeNewlines=false;NewLineChars=10;Indent=true;IndentChars=10;NewLineOnAttributes=true;Load=StringWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Auto</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>UnicodeWriter</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>10</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>10</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>StringWriter</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="46" Implemented="true" Pri="2" Desc="ConformanceLevel=Fragment;CheckCharacters=false;WriterType=UnicodeWriter;CloseOutput=false;OmitXmlDeclaration=false;NormalizeNewlines=true;NewLineChars=20;Indent=false;IndentChars=9;NewLineOnAttributes=false;Load=MemoryStream">
+      <FilterCriteria>
+        <ConformanceLevel>Fragment</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>UnicodeWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>20</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>9</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>MemoryStream</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="47" Implemented="true" Pri="2" Desc="ConformanceLevel=Document;CheckCharacters=true;WriterType=TextWriter;CloseOutput=true;OmitXmlDeclaration=true;NormalizeNewlines=false;NewLineChars=20;Indent=false;IndentChars=9;NewLineOnAttributes=true;Load=XmlDocumentWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Document</ConformanceLevel>
+        <CheckCharacters>true</CheckCharacters>
+        <WriterType>TextWriter</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>20</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>9</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>XmlDocumentWriter</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="48" Implemented="true" Pri="2" Desc="ConformanceLevel=Fragment;CheckCharacters=false;WriterType=XmlDocumentWriter;CloseOutput=false;OmitXmlDeclaration=false;NormalizeNewlines=true;NewLineChars=10;Indent=true;IndentChars=9;NewLineOnAttributes=true;Load=UTF8Writer">
+      <FilterCriteria>
+        <ConformanceLevel>Fragment</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>XmlDocumentWriter</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>false</OmitXmlDeclaration>
+        <NormalizeNewlines>true</NormalizeNewlines>
+        <NewLineChars>10</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>9</IndentChars>
+        <NewLineOnAttributes>true</NewLineOnAttributes>
+        <Load>UTF8Writer</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="49" Implemented="true" Pri="2" Desc="ConformanceLevel=Document;CheckCharacters=false;WriterType=UTF8Writer;CloseOutput=false;OmitXmlDeclaration=true;NormalizeNewlines=false;NewLineChars=13;Indent=true;IndentChars=10;NewLineOnAttributes=false;Load=ValidUri">
+      <FilterCriteria>
+        <ConformanceLevel>Document</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>UTF8Writer</WriterType>
+        <CloseOutput>false</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>13</NewLineChars>
+        <Indent>true</Indent>
+        <IndentChars>10</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>InvalidUri</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="InValid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+          <ExceptionType>System.ArgumentException</ExceptionType>
+          <ExceptionMessage>EMessage</ExceptionMessage>
+        </Result>
+      </Data>
+    </Variation>
+    <Variation Id="50" Implemented="true" Pri="2" Desc="ConformanceLevel=Document;CheckCharacters=false;WriterType=TextWriter;CloseOutput=true;OmitXmlDeclaration=true;NormalizeNewlines=false;NewLineChars=9;Indent=false;IndentChars=9;NewLineOnAttributes=false;Load=StreamWriter">
+      <FilterCriteria>
+        <ConformanceLevel>Document</ConformanceLevel>
+        <CheckCharacters>false</CheckCharacters>
+        <WriterType>TextWriter</WriterType>
+        <CloseOutput>true</CloseOutput>
+        <OmitXmlDeclaration>true</OmitXmlDeclaration>
+        <NormalizeNewlines>false</NormalizeNewlines>
+        <NewLineChars>9</NewLineChars>
+        <Indent>false</Indent>
+        <IndentChars>9</IndentChars>
+        <NewLineOnAttributes>false</NewLineOnAttributes>
+        <Load>StreamWriter</Load>
+      </FilterCriteria>
+      <Data>
+        <Result Type="Valid">
+          <TestXmlFile>xmlfile</TestXmlFile>
+        </Result>
+      </Data>
+    </Variation>
+
+  </TestCase>
+</TestModule>

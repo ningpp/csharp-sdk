@@ -1,0 +1,104 @@
+﻿<root>
+  <A xmlns:p="nsp">
+
+    <p:B/>
+    <q:B xmlns:q="nsp"/>
+    <q:B xmlns:q="nsp" xmlns:p="nsp"/>
+    <B xmlns="nsp" />
+    <p:B xmlns:p="nsp"/>
+    <p:C xmlns:p="ns1" xmlns:q="nsp" q:id="a21" p:id="a22"/>
+
+    <!-- NS redefinition -->
+    <p:B xmlns:p="nspRedef">
+      <p:B xmlns:p="nsp">
+        <!-- Duplicate -->
+        <p:B xmlns:p="nsp"/>
+      </p:B>
+    </p:B>
+
+  </A>
+
+  <D xmlns="nsd">
+    <E xmlns="nsd"/>
+    <E xmlns="nsOther" />
+    <?PI dummy?>
+    <E xmlns:p="nsd"/>
+    Text1Dummy
+    <!--Namespace redefinition-->
+    <F xmlns="nsRedef">
+      <F xmlns="nsd">
+        <F xmlns="nsd"/>
+        <F xmlns="nsRedef"/>
+        <p:F xmlns:p="nsd"></p:F>
+      </F>
+    </F>
+
+    <!-- Namespace undefinition -->
+    <G xmlns="">
+      <G xmlns="">
+        <G xmlns="nsd">
+          <G xmlns="nsd"/>
+          <G xmlns:p="nsd"/>
+        </G>
+      </G>
+    </G>
+    
+  </D>
+  
+  <!--xml namespace-->
+  <Q xmlns:xml="http://www.w3.org/XML/1998/namespace">
+    <R xml:lang="sk-sk" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns="uhu">
+      <S xml:space="preserve"/>
+    </R>
+  </Q>
+
+  <!-- positioning excersize -->
+  <X xmlns:a1="a1" xmlns:a2="a2" xmlns:a3="a3" xmlns:a4="a4" xmlns:a5="a5" xmlns="n1">
+    <X1 xmlns:a1="a1" xmlns:b="b" xmlns:a2="a2"/>
+    <X2 xmlns:a1="a1" xmlns:a2="a2" xmlns:b="b"/>
+    <X3 xmlns:b="b" xmlns:a1="a1" xmlns:a2="a2"/>
+    <X4 xmlns:b="b" xmlns:a1="a1" xmlns:a2="a2" xmlns:c="c"/>
+    <X5 xmlns:b="b" xmlns:a1="a1" xmlns:d="d" xmlns:a2="a2" xmlns:c="c"/>
+    <X6 xmlns:b="b" xmlns:a1="a1" xmlns:a2="a2" xmlns:d="d" xmlns:c="c"/>
+    <X7 xmlns:a1="a1" xmlns:a5="a5"/>
+    <X8 xmlns:a1="a1"/>
+    <X8 xmlns:v="v1" xmlns:a1="a1"/>
+    <X8 xmlns:a1="a1" xmlns:v="v1" />
+
+    <XX1 xmlns="n1" xmlns:b="b" xmlns:a2="a2"/>
+    <XX2 xmlns="n1" xmlns:a2="a2" xmlns:b="b"/>
+    <XX3 xmlns:b="b" xmlns="n1" xmlns:a2="a2"/>
+    <XX4 xmlns:b="b" xmlns="n1" xmlns:a2="a2" xmlns:c="c"/>
+    <XX5 xmlns:b="b" xmlns="n1" xmlns:d="d" xmlns:a2="a2" xmlns:c="c"/>
+    <XX6 xmlns:b="b" xmlns="n1" xmlns:a2="a2" xmlns:d="d" xmlns:c="c"/>
+    <XX7 xmlns="n1" xmlns:a5="a5"/>
+    <XX8 xmlns="n1"/>
+    <XX8 xmlns:v="v1" xmlns="n1"/>
+    <XX8 xmlns="n1" xmlns:v="v1" />
+
+
+    <Y1 a1:p="a1p" xmlns:a1="a1" xmlns:a5="a5"/>
+    <Y2 xmlns:a1="a1" a1:p="a1p" xmlns:a5="a5"/>
+    <Y3 xmlns:a1="a1" xmlns:a5="a5" a1:p="a1p"/>
+
+    <YY1 a1:p="a1p" xmlns="n1" xmlns:a5="a5"/>
+    <YY2 xmlns="n1" a1:p="a1p" xmlns:a5="a5"/>
+    <YY3 xmlns="n1" xmlns:a5="a5" a1:p="a1p"/>
+
+    <W1 xmlns:a1="a1">
+      <W2 xmlns:a1="a2" xmlns:a5="a5" xmlns="n1" a1:a="a1a" a5:a="a5a" xmlns:p="n1" p:a="na-a">
+        <W3 a1:a="a1a" a5:a="a5a" xmlns:p="n1" p:a="na-a" xmlns:a1="a2" xmlns:a5="a5" xmlns="n1" >
+          <W4 xmlns:a4="a4"  a1:a="a1a" xmlns:a5="a5" a5:a="a5a"  p:a="na-a" xmlns:a1="a2" xmlns="n1" xmlns:p="n1"/>
+        </W3>
+      </W2>
+    </W1>
+
+    <Z1>xmlns:a1="a1"</Z1>
+    <!-- xmlns:a1="a1"-->
+
+    <Z2>xmlns="n1"</Z2>
+    <!-- xmlns="n1"-->
+    <?xmlns n1?>
+  </X>
+  
+</root>

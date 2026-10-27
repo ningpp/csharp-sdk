@@ -1,0 +1,44 @@
+<A>
+    <B>
+        <C>
+            data
+        </C>
+        <C/>
+        <C/>
+        <C/>
+    <X/>
+    </B>
+    <B>
+        <C/>
+        <C>
+            data
+        </C>
+        <C/>
+        <?PI epilog?>
+    </B>
+    <B>
+        <C/>
+        <C>
+            data
+        </C>
+        <!-- comnent epilog -->
+    </B>
+    <B>
+        <C/>
+        <C>
+            <Q/>
+        </C>
+        <C/>
+        <C/>
+        <C/>
+        text epilog
+    </B>
+    <B>
+        <C/>
+        <C/>
+    </B>
+    <Y>
+        <Z/>
+        <?PI click?>
+    </Y>
+</A>
