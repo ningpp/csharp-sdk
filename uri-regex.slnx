@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/uri/src/">
+    <Project Path="uri/src/dotnet-uri.csproj" />
+  </Folder>
+  <Folder Name="/uri/tests/">
+    <Project Path="uri/tests/ExtendedFunctionalTests/dotnet-uri-extendedfunctional-tests.csproj" />
+    <Project Path="uri/tests/FunctionalTests/dotnet-uri-functional-tests.csproj" />
+    <Project Path="uri/tests/UnitTests/dotnet-uri-unit-tests.csproj" />
+  </Folder>
+  <Folder Name="/regular-expressions/src/">
+    <Project Path="regular-expressions/src/dotnet.text.regularexpressions.csproj" />
+  </Folder>
+  <Folder Name="/regular-expressions/tests/">
+    <Project Path="regular-expressions/tests/dotnet.text.regularexpressions.Tests.csproj" />
+  </Folder>
+</Solution>
